@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    
+    /* background-size: cover; */
+    background-position: center;
+    font-family: sans serif;                     
+}
+
+.okok{
+
+    position: relative;
+    top: 50%;
+    left: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #3f8f705d;
+    width: 55%;
+    
+    
+
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+    flood-color: #fff;
+}
+
+.form-control {
+    
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.jumbotrom h1 li{
+    font-size: 32px;
+    line-height: 10px;
+    align-content: center;
+    border-left: 50%;
+}
+
+.jumbotrom p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    align-content: center;
+    border-right: 50%;
+}
+
+
+
+
+
+
+
+
+/*gestion de la barre grise de la navbar*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    /*background: #494949;*/
+    background: linear-gradient(to right, #3f8f70, #5faa8d, #92d3ba );
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    /*décale les écriture vers le haut/bas à lintérieur du bloc de navbar*/
+    line-height: 50px;
+    
+    padding: 0 30px;
+  
+    /*couleur des écriture sans pointage du curseur*/
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  header nav ul li a:hover, 
+  header nav ul li a.active {
+  
+    /*couleur en laquelle l'écriture se change lorsqu'on pointe le curseur dessus*/
+    color:#000;
+  
+    /*couleur du rectangle qui contient chaque boutons*/
+    background: #fcfcfc;
+  }
+  
+  .menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+  header {
+    padding: 0 20px;
+  }
+  .menu-toggle{
+    display: block;
+  }
+  header nav {
+    
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: calc(100vh - 50px);
+    background: #333;
+    left: -100%;
+    transition: 0.5s;
+  }
+  
+  header nav.active {
+    left: 0;
+  }
+  
+  header nav ul { 
+  display:block;
+  text-align: center;
+  }
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 2);
+  }
+  }
